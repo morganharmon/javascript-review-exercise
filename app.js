@@ -7,8 +7,8 @@
 // the number of seconds
 
 function convertToSeconds(min) {
-    let secs = min * 60
-    return secs
+    let secs = min * 60;
+    return secs;
 }
 
 console.log(`convertToSeconds(10) === 600 : ${convertToSeconds(10) === 600}`);
@@ -41,12 +41,12 @@ console.log(`lessThan100(100, 10) === false : ${lessThan100(100, 10) === false}`
 // and a third parameter called middle_name which is optional.
 // The function should return a string with the first, middle and last names
 function getFormattedName(first_name, last_name, middle_name) {
-    if (middle_name == null) {
-        let name = first_name + " " + last_name;
+    if (middle_name === null) {
+        let name = first_name + ' ' + last_name;
         return name;
     } else {
-    let name = first_name + " " + middle_name + " " + last_name;
-    return name;
+        let name = first_name + ' ' + middle_name + ' ' + last_name;
+        return name;
     }
 }
 console.log(
@@ -71,43 +71,44 @@ console.log(
 //    number of days for Feb. The default value for the year should be
 //    the current year
 function daysInMonth(month) {
-    if (month == 1) {
+    if (month === 1) {
         let days = 31;
         return days;
-    } else if (month == 2) {
-                let days = 29;
-                return days;
-    } else if (month == 3) {
-                let days = 31;
-                return days;
-    } else if (month == 4) {
-                let days = 30;
-                return days;
-    } else if (month == 5) {
-                let days = 31;
-                return days;
-    } else if (month == 6) {
-                let days = 30;
-                return days;
-    } else if (month == 7) {
-                let days = 31;
-                return days;
-    } else if (month == 8) {
-                let days = 31;
-                return days;
-    } else if (month == 9) {
-                let days = 30;
-                return days;
-    } else if (month == 10) {
-                let days = 31;
-                return days;
-    } else if (month == 11) {
-                let days = 30;
-                return days;
-    } else if (month == 12) {
-                let days = 31;
-                return days;
-    }
+    } else if (month === 2) {
+        let days = 29;
+        return days;
+    } else if (month === 3) {
+        let days = 31;
+        return days;
+    } else if (month === 4) {
+        let days = 30;
+        return days;
+    } else if (month === 5) {
+        let days = 31;
+        return days;
+    } else if (month === 6) {
+        let days = 30;
+        return days;
+    } else if (month === 7) {
+        let days = 31;
+        return days;
+    } else if (month === 8) {
+        let days = 31;
+        return days;
+    } else if (month === 9) {
+        let days = 30;
+        return days;
+    } else if (month === 10) {
+        let days = 31;
+        return days;
+    } else if (month === 11) {
+        let days = 30;
+        return days;
+    } else if (month === 12) {
+        let days = 31;
+        return days;
+    } 
+    
 } 
 console.log(`daysInMonth(2) === 29: ${daysInMonth(2) === 29}`);
 console.log(`daysInMonth(3) === 31: ${daysInMonth(3) === 31}`);
