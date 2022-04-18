@@ -6,7 +6,10 @@
 // a number of minutes as an argument and returns
 // the number of seconds
 
-function convertToSeconds() {}
+function convertToSeconds(min) {
+    const secs = min * 60
+    return secs
+}
 
 console.log(`convertToSeconds(10) === 600 : ${convertToSeconds(10) === 600}`);
 
