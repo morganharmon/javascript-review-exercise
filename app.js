@@ -7,7 +7,7 @@
 // the number of seconds
 
 function convertToSeconds(min) {
-    const secs = min * 60
+    let secs = min * 60
     return secs
 }
 
@@ -17,7 +17,7 @@ console.log(`convertToSeconds(10) === 600 : ${convertToSeconds(10) === 600}`);
 // Write a function called areaOfTriangle that takes in the base and height
 // of a triangle and returns its area
 function areaOfTriangle(base, height) {
-    const area = base * height / 2;
+    let area = base * height / 2;
     return area;
 }
 console.log(`areaOfTriangle(5, 10) === 25 : ${areaOfTriangle(5, 10) === 25}`);
@@ -42,10 +42,10 @@ console.log(`lessThan100(100, 10) === false : ${lessThan100(100, 10) === false}`
 // The function should return a string with the first, middle and last names
 function getFormattedName(first_name, last_name, middle_name) {
     if (middle_name == null) {
-        const name = first_name + " " + last_name;
+        let name = first_name + " " + last_name;
         return name;
     } else {
-    const name = first_name + " " + middle_name + " " + last_name;
+    let name = first_name + " " + middle_name + " " + last_name;
     return name;
     }
 }
@@ -70,7 +70,45 @@ console.log(
 //    that checks if the year is a leap year, and returns the correct
 //    number of days for Feb. The default value for the year should be
 //    the current year
-function daysInMonth() {}
+function daysInMonth(month) {
+    if (month == 1) {
+        let days = 31;
+        return days;
+    } else if (month == 2) {
+                let days = 29;
+                return days;
+    } else if (month == 3) {
+                let days = 31;
+                return days;
+    } else if (month == 4) {
+                let days = 30;
+                return days;
+    } else if (month == 5) {
+                let days = 31;
+                return days;
+    } else if (month == 6) {
+                let days = 30;
+                return days;
+    } else if (month == 7) {
+                let days = 31;
+                return days;
+    } else if (month == 8) {
+                let days = 31;
+                return days;
+    } else if (month == 9) {
+                let days = 30;
+                return days;
+    } else if (month == 10) {
+                let days = 31;
+                return days;
+    } else if (month == 11) {
+                let days = 30;
+                return days;
+    } else if (month == 12) {
+                let days = 31;
+                return days;
+    }
+} 
 console.log(`daysInMonth(2) === 29: ${daysInMonth(2) === 29}`);
 console.log(`daysInMonth(3) === 31: ${daysInMonth(3) === 31}`);
 console.log(`daysInMonth(11) === 30: ${daysInMonth(11) === 30}`);
